@@ -27,6 +27,12 @@ function hent_data_fra_api($category_id) {
     return json_decode($data);
 }
 
+/**
+* Viser danske nyheder via shortcode [vis_nyheder]
+* Henter og formaterer nyheder fra kategori 13 (danske nyheder).
+* Inkluderer titler, datoer, uddrag og featured images.
+*/
+
 function vis_nyheder() {
     $data = hent_data_fra_api(13);
 
@@ -79,7 +85,11 @@ function vis_nyheder() {
 
 add_shortcode('vis_nyheder', 'vis_nyheder');
 
-
+/**
+* Viser olietillæg via shortcode [vis_olietillaeg]
+* Henter og formaterer olietillæg fra kategori 20.
+* Inkluderer titel, indhold og opdateringsdato.
+*/
 
 function vis_olietillaeg() {
     $data = hent_data_fra_api(20);
@@ -111,6 +121,9 @@ function vis_olietillaeg() {
 
 add_shortcode('vis_olietillaeg', 'vis_olietillaeg');
 
+/**
+* Modificerer news post type slug
+*/
 
 function wpnw_modify_news_post_slug( $slug ){
 $slug = 'news';
