@@ -9,10 +9,9 @@ Dette repository indeholder koden til hovedsitet. Dette site fungerer som kilde 
 - `/css/style.css`: Stylesheet for nyhedsvisning og olietillæg
 
 ## Funktionalitet
-- Henter danske nyheder fra hovedsitet (kategori 13)
-- Henter og viser olietillæg (kategori 20)
-- Viser nyheder med dansk datoformat
-- Responsivt design med grid layout
+- Viser danske nyheder (kategori 13) lokalt på hovedsitet
+- Viser olietillæg (kategori 20) lokalt på hovedsitet
+- Fungerer som API-kilde for andre JumboTransport sites
 
 ## Shortcodes
 Koden implementerer to shortcodes:
