@@ -2,7 +2,7 @@
 Code from bachelor project in WordPress - Danish site
 
 ## Beskrivelse
-Dette repository indeholder koden til den danske version af WordPress-integrationen.
+Dette repository indeholder koden til hovedsitet. Dette site fungerer som kilde for nyheder og olietillæg, som andre sites henter via REST API.
 
 ## Projekt Struktur
 - `/functions/api-integration.php`: Indeholder API integration og shortcodes
